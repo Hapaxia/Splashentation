@@ -61,7 +61,7 @@ class Font;
 
 } // namespace sf
 
-// Splashentation v1.0.0
+// Splashentation v1.0.1
 class Splashentation
 {
 public:
