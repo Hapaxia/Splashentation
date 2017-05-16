@@ -90,7 +90,7 @@ public:
 	{
 		std::unique_ptr<sf::Drawable> drawable;
 		int zIndex;
-		OrderedDrawable() : drawable(nullptr), zIndex(0) { std::cout << "DEF\n"; }
+		OrderedDrawable() : drawable(nullptr), zIndex(0) { }
 		template <class drawableT>
 		explicit OrderedDrawable(drawableT& newDrawable, const int newZIndex = 0) : zIndex(newZIndex), drawable(new drawableT(newDrawable)) {}
 		template <class drawableT>
