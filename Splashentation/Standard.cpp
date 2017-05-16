@@ -298,7 +298,7 @@ void Splashentation::t_play()
 			else
 			{
 				std::lock_guard<std::mutex> lockGuard(m_informationMutex);
-				m_currentSlideIndex = currentSlide - m_slides.begin();
+				m_currentSlideIndex = static_cast<unsigned int>(currentSlide - m_slides.begin());
 			}
 		}
 	}
